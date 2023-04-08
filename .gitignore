@@ -1,4 +1,4 @@
-./node_modules 
+node_modules 
 
 # Ignore all files in the build directory
 ./build
