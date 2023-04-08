@@ -1,0 +1,13 @@
+./node_modules 
+
+# Ignore all files in the build directory
+./build
+
+# Ignore all files in the dist directory
+./dist
+
+# Ignore all files in the .vscode directory
+.vscode
+
+# Ignore pnpm-lock.yaml
+pnpm-lock.yaml
