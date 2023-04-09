@@ -5,15 +5,15 @@ import './Button.scss';
 
 let proptypes = {
   onClick: PropTypes.func,
-  title: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
   leftIcon: PropTypes.string,
   rightIcon: PropTypes.string,
 };
 
-export const Button = ({ onClick, title, leftIcon, rightIcon }) => {
+export const Button = ({ onClick, label, leftIcon, rightIcon }) => {
   return (
     <button className="button-container" onClick={onClick}>
-      {title}
+      {label}
     </button>
   );
 };
