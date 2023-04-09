@@ -6,5 +6,8 @@
 // settings
 @use 'settings/colors';
 
+// generic
+@use 'generic/normalize';
+
 // utilities
 @use 'utilities/grid';
