@@ -30,7 +30,7 @@ function App() {
         label="Button"
         leftIcon={'las la-bell'}
         rightIcon={'las la-bell'}
-        size={'lg'}
+        size={'sm'}
         disabled={false}
         type={'button'}
       />
