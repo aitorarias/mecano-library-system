@@ -1,3 +1,7 @@
+@use '../../styles/base/corner-radius';
+@use '../../styles/base/spacing';
+@use '../../styles/base/typography';
+
 @use '../../styles/settings/colors';
 
 .button-container {
@@ -13,4 +17,5 @@
   width: 100%;
   color: white;
   border: none;
+  color: colors.$white;
 }
