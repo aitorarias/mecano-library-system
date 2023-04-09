@@ -1,0 +1,84 @@
+@use '../../fonts/WorkSans-Regular.woff2';
+@use '../../fonts/WorkSans-Medium.woff2';
+@use '../../fonts/WorkSans-SemiBold.woff2';
+@use '../../fonts/WorkSans-Bold.woff2';
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url(WorkSans-Regular.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url(WorkSans-Medium.woff2) format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url(WorkSans-SemiBold.woff2) format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url(WorkSans-Bold.woff2) format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.h1 {
+  font-family: 'Work Sans';
+  src: url(WorkSans-Regular.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5rem;
+  line-height: 5.875rem;
+}
+
+.h2 {
+  font-family: 'Work Sans';
+  src: url(WorkSans-Medium.woff2) format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+.h3 {
+  font-family: 'Work Sans';
+  src: url(WorkSans-SemiBold.woff2) format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+@mixin font-subtitle {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+@mixin lg {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+@mixin md {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+@mixin sm {
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+@mixin xsm {
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+}
