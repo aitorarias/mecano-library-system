@@ -1,39 +1,36 @@
-@use '../../fonts/WorkSans-Regular.woff2';
-@use '../../fonts/WorkSans-Medium.woff2';
-@use '../../fonts/WorkSans-SemiBold.woff2';
-@use '../../fonts/WorkSans-Bold.woff2';
+$font-path: '../../fonts/';
 
 @font-face {
   font-family: 'Work Sans';
-  src: url(WorkSans-Regular.woff2) format('woff2');
+  src: url('#{$font-path}/WorkSans-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Work Sans';
-  src: url(WorkSans-Medium.woff2) format('woff2');
+  src: url('#{$font-path}/WorkSans-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Work Sans';
-  src: url(WorkSans-SemiBold.woff2) format('woff2');
+  src: url('#{$font-path}/WorkSans-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Work Sans';
-  src: url(WorkSans-Bold.woff2) format('woff2');
+  src: url('#{$font-path}/WorkSans-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
 }
 
 .h1 {
   font-family: 'Work Sans';
-  src: url(WorkSans-Regular.woff2) format('woff2');
+  src: url('#{$font-path}/WorkSans-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-size: 5rem;
@@ -42,7 +39,7 @@
 
 .h2 {
   font-family: 'Work Sans';
-  src: url(WorkSans-Medium.woff2) format('woff2');
+  src: url('#{$font-path}/WorkSans-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-size: 3.5rem;
@@ -51,7 +48,7 @@
 
 .h3 {
   font-family: 'Work Sans';
-  src: url(WorkSans-SemiBold.woff2) format('woff2');
+  src: url('#{$font-path}/WorkSans-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
   font-size: 3rem;
