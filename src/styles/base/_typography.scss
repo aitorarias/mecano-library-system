@@ -1,28 +1,28 @@
 $font-path: '../../fonts/';
 
 @font-face {
-  font-family: 'Work Sans';
+  font-family: 'Regular';
   src: url('#{$font-path}/WorkSans-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Work Sans';
+  font-family: 'Medium';
   src: url('#{$font-path}/WorkSans-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Work Sans';
+  font-family: 'SemiBold';
   src: url('#{$font-path}/WorkSans-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Work Sans';
+  font-family: 'Bold';
   src: url('#{$font-path}/WorkSans-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;

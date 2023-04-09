@@ -7,15 +7,49 @@
 .button-container {
   align-items: center;
   background-color: colors.$primary-base;
-  border-radius: 0.75rem;
+  border-radius: corner-radius.$radius-250;
+  border: none;
+  border-style: solid;
+  color: colors.$white;
   cursor: pointer;
   display: flex;
+  font-family: 'Medium';
+  gap: spacing.$spacing-150;
+  @include typography.md;
   justify-content: center;
-  height: 100%;
-  transition: all 0.3s ease-in-out;
-  padding: 1rem 2rem;
-  width: 100%;
-  color: white;
-  border: none;
-  color: colors.$white;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+  &--size {
+    &-lg {
+      padding: spacing.$spacing-250 spacing.$spacing-350;
+    }
+    &-md {
+      padding: spacing.$spacing-200 spacing.$spacing-300;
+    }
+    &-sm {
+      @include typography.sm;
+      padding: spacing.$spacing-150 spacing.$spacing-250;
+      gap: 0.25rem;
+    }
+  }
+  &:disabled {
+    background-color: colors.$tertiary-01;
+    border: 1.5px solid colors.$tertiary-02;
+    color: colors.$tertiary-02;
+    cursor: not-allowed;
+    pointer-events: all !important;
+    opacity: 0.7;
+  }
+  &:hover {
+    background-color: colors.$primary-01;
+  }
+  &:active {
+    background-color: colors.$primary-02;
+  }
+  &:focus {
+    background-color: colors.$secondary-base;
+    border: 4px solid colors.$black;
+    outline: none;
+  }
 }

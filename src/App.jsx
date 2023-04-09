@@ -26,7 +26,14 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-      <Button label="Button" />
+      <Button
+        label="Button"
+        leftIcon={'las la-bell'}
+        rightIcon={'las la-bell'}
+        size={'lg'}
+        disabled={false}
+        type={'button'}
+      />
     </div>
   );
 }
