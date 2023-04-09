@@ -1,0 +1,19 @@
+@include brisa {
+  box-shadow: 0px 2px 8px 4px #0000001a;
+}
+
+@include bruma {
+  box-shadow: 0px 4px 16px 8px #0000001a;
+}
+
+@include bruma-flip {
+  box-shadow: 0px -4px 16px 8px #0000001a;
+}
+
+@include nimbo {
+  box-shadow: 0px 40px 70px 0px #00000040;
+}
+
+@include frost {
+  box-shadow: 0px 2px 12px 4px #1463f533;
+}
