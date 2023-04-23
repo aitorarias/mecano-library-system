@@ -41,6 +41,7 @@ function App() {
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ligula a quam cursus scelerisque at non justo. Ut mi ipsum, ullamcorper eget risus non, dictum finibus elit. Sed vestibulum dui nec placerat interdum. Donec tincidunt enim at nisi pellentesque accumsan. Proin faucibus lobortis dignissim. Suspendisse potenti. Mauris vestibulum ipsum quis odio faucibus posuere. Ut non porta nibh."
         url="https://marca.com"
         urlName="Marca"
+        isOpen={true}
       />
     </div>
   );

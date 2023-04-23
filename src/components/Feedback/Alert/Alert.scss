@@ -10,7 +10,6 @@
   justify-content: flex-start;
   transition: opacity 200ms;
   padding: 1rem;
-  width: 60%;
   &__success {
     background-color: colors.$succesful-soft;
     border-color: colors.$succesful-base;
@@ -52,7 +51,7 @@
       border-radius: 100px;
       height: inherit;
       margin-left: 0.5rem;
-      padding: 3px;
+      padding: 1px;
       width: 4px;
     }
     &__description {
@@ -81,12 +80,4 @@
   &__success {
     color: colors.$succesful-base;
   }
-}
-
-.alert-dismissed {
-  height: 0;
-  opacity: 0;
-  padding: 0;
-  margin: 0;
-  border: none;
 }

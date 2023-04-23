@@ -10,11 +10,11 @@ let proptypes = {
   urlName: PropTypes.string.isRequired,
   status: PropTypes.oneOf(['neutral', 'success', 'error', 'warning', 'info']),
   iconNeutral: PropTypes.string,
-  onClose: PropTypes.func,
+  isOpen: PropTypes.bool,
 };
 
-export const Alert = ({ status, iconNeutral, title, description, url, urlName, onClose = true }) => {
-  const [showAlert, setShowAlert] = React.useState(onClose);
+export const Alert = ({ status, iconNeutral, title, description, url, urlName, isOpen }) => {
+  const [showAlert, setShowAlert] = React.useState(isOpen);
 
   const handleCloseAlert = () => {
     setShowAlert(false);
@@ -22,7 +22,7 @@ export const Alert = ({ status, iconNeutral, title, description, url, urlName, o
 
   return (
     <>
-      {showAlert ? (
+      {showAlert && (
         <div className={`alert-container alert-container__${status}`} role="alert">
           <div className={`alert-container--content`}>
             <header className={`alert-container--header`}>
@@ -49,8 +49,6 @@ export const Alert = ({ status, iconNeutral, title, description, url, urlName, o
             </main>
           </div>
         </div>
-      ) : (
-        <div className="alert-dismissed" role="alert" />
       )}
     </>
   );
