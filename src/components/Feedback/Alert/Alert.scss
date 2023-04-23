@@ -1,0 +1,92 @@
+@use '../../../styles/settings/colors';
+@use '../../../styles/base/typography';
+
+.alert-container {
+  display: flex;
+  border-style: solid;
+  border-radius: 0.75rem;
+  border-width: 0.125rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: opacity 200ms;
+  padding: 1rem;
+  width: 60%;
+  &__success {
+    background-color: colors.$succesful-soft;
+    border-color: colors.$succesful-base;
+  }
+  &__icon {
+    cursor: pointer;
+  }
+  &--content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+  &--header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+  &--principal {
+    align-items: center;
+    display: flex;
+    flex-grow: 0.99;
+    gap: 0.5rem;
+    height: 2rem;
+  }
+  &--title {
+    font-family: 'Work Sans Medium';
+    @include typography.md;
+  }
+
+  &--action {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    &__divider {
+      background-color: colors.$succesful-decorative;
+      border-radius: 100px;
+      height: inherit;
+      margin-left: 0.5rem;
+      padding: 3px;
+      width: 4px;
+    }
+    &__description {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      &__paragraph {
+        color: colors.$neutral-03;
+        font-family: 'Work Sans Regular';
+        margin-top: 0;
+        margin-bottom: 0;
+        @include typography.sm;
+      }
+      &__link {
+        color: colors.$black;
+        font-family: 'Work Sans Medium';
+        @include typography.sm;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.icon {
+  &__success {
+    color: colors.$succesful-base;
+  }
+}
+
+.alert-dismissed {
+  height: 0;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+}

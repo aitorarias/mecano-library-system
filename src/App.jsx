@@ -4,6 +4,7 @@ import './App.scss';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import { Button } from './components/Button/Button';
+import { Alert } from './components/Feedback/Alert/Alert';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -33,6 +34,13 @@ function App() {
         size={'sm'}
         disabled={false}
         type={'button'}
+      />
+      <Alert
+        title="Alert"
+        status="success"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ligula a quam cursus scelerisque at non justo. Ut mi ipsum, ullamcorper eget risus non, dictum finibus elit. Sed vestibulum dui nec placerat interdum. Donec tincidunt enim at nisi pellentesque accumsan. Proin faucibus lobortis dignissim. Suspendisse potenti. Mauris vestibulum ipsum quis odio faucibus posuere. Ut non porta nibh."
+        url="https://marca.com"
+        urlName="Marca"
       />
     </div>
   );
