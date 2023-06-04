@@ -39,7 +39,7 @@ export const Alert = ({ status, iconNeutral, title, description, url, urlName, i
               </div>
             </header>
             <main className={`alert-container--action`}>
-              <aside className={`alert-container--action__divider`} />
+              <aside className={`alert-container--action__divider alert-container--action__divider__${status}`} />
               <article className={`alert-container--action__description`}>
                 <p className={`alert-container--action__description__paragraph`}>{description}</p>
                 <a className={`alert-container--action__description__link`} href={url}>

@@ -14,6 +14,18 @@
     background-color: colors.$succesful-soft;
     border-color: colors.$succesful-base;
   }
+  &__warning {
+    background-color: colors.$warning-soft;
+    border-color: colors.$warning-base;
+  }
+  &__info {
+    background-color: colors.$info-soft;
+    border-color: colors.$info-base;
+  }
+  &__error {
+    background-color: colors.$error-soft;
+    border-color: colors.$error-base;
+  }
   &__icon {
     cursor: pointer;
   }
@@ -47,12 +59,23 @@
     flex-direction: row;
     gap: 1rem;
     &__divider {
-      background-color: colors.$succesful-decorative;
       border-radius: 100px;
       height: inherit;
       margin-left: 0.5rem;
       padding: 1px;
       width: 4px;
+      &__success {
+        background-color: colors.$succesful-decorative;
+      }
+      &__warning {
+        background-color: colors.$warning-decorative;
+      }
+      &__info {
+        background-color: colors.$info-decorative;
+      }
+      &__error {
+        background-color: colors.$error-decorative;
+      }
     }
     &__description {
       align-items: flex-start;

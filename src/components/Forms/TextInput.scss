@@ -1,0 +1,22 @@
+@use '../../styles/base/corner-radius';
+@use '../../styles/base/spacing';
+@use '../../styles/base/typography';
+
+@use '../../styles/settings/colors';
+
+.textinput {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  &__label {
+    font-family: 'Work Sans Medium';
+    @include typography.md;
+  }
+  &__input--container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+}

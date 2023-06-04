@@ -35,3 +35,33 @@ AlertSuccess.args = {
   urlName: 'Google',
   isOpen: true,
 };
+
+export const AlertWarning = Template.bind({});
+AlertWarning.args = {
+  status: 'warning',
+  title: 'Alert',
+  description: 'This is a warning alert—check it out!',
+  url: 'https://www.google.com',
+  urlName: 'Google',
+  isOpen: true,
+};
+
+export const AlertError = Template.bind({});
+AlertError.args = {
+  status: 'error',
+  title: 'Alert',
+  description: 'This is a error alert—check it out!',
+  url: 'https://www.google.com',
+  urlName: 'Google',
+  isOpen: true,
+};
+
+export const AlertInfo = Template.bind({});
+AlertInfo.args = {
+  status: 'info',
+  title: 'Alert',
+  description: 'This is a info alert—check it out!',
+  url: 'https://www.google.com',
+  urlName: 'Google',
+  isOpen: true,
+};
